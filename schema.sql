@@ -1,0 +1,1 @@
+INSERT INTO "Passkey" ("key", "createdAt", "updatedAt") VALUES ('lokatus1234', '2024-12-04T13:10:18.013Z', '2024-12-04T00:00:40.969+00:00');

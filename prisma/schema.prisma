@@ -1,0 +1,16 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["driverAdapters"]
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:../.wrangler/state/v3/d1/miniflare-D1DatabaseObject/60895cf812fdd3391c70d9f8663e33a2a692b2488cdf2a1b194cd66a42551799.sqlite"
+}
+
+model Passkey {
+  id        Int      @id @default(autoincrement())
+  key       String   @unique @default("lokatus1234")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
